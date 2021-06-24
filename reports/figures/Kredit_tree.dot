@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="laufkont <= 2.5\ngini = 0.5\nsamples = 494\nvalue = [247.0, 247.0]\nclass = good Credit", fillcolor="#ffffff"] ;
+1 [label="laufzeit <= 22.5\ngini = 0.457\nsamples = 270\nvalue = [198.972, 108.68]\nclass = bad Credit", fillcolor="#f3c6a5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="moral <= 1.5\ngini = 0.5\nsamples = 151\nvalue = [77.187, 74.806]\nclass = bad Credit", fillcolor="#fefbf9"] ;
+1 -> 2 ;
+3 [label="gini = 0.199\nsamples = 17\nvalue = [22.299, 2.823]\nclass = bad Credit", fillcolor="#e89152"] ;
+2 -> 3 ;
+4 [label="gini = 0.491\nsamples = 134\nvalue = [54.889, 71.983]\nclass = good Credit", fillcolor="#d0e8f9"] ;
+2 -> 4 ;
+5 [label="sparkont <= 3.5\ngini = 0.341\nsamples = 119\nvalue = [121.785, 33.874]\nclass = bad Credit", fillcolor="#eca470"] ;
+1 -> 5 ;
+6 [label="gini = 0.275\nsamples = 102\nvalue = [118.354, 23.289]\nclass = bad Credit", fillcolor="#ea9a60"] ;
+5 -> 6 ;
+7 [label="gini = 0.37\nsamples = 17\nvalue = [3.431, 10.586]\nclass = good Credit", fillcolor="#79bded"] ;
+5 -> 7 ;
+8 [label="hoehe <= 4152.0\ngini = 0.383\nsamples = 224\nvalue = [48.028, 138.32]\nclass = good Credit", fillcolor="#7ebfee"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="laufkont <= 3.5\ngini = 0.299\nsamples = 178\nvalue = [25.729, 115.031]\nclass = good Credit", fillcolor="#65b3eb"] ;
+8 -> 9 ;
+10 [label="gini = 0.484\nsamples = 27\nvalue = [10.292, 14.82]\nclass = good Credit", fillcolor="#c2e1f7"] ;
+9 -> 10 ;
+11 [label="gini = 0.231\nsamples = 151\nvalue = [15.438, 100.211]\nclass = good Credit", fillcolor="#58ace9"] ;
+9 -> 11 ;
+12 [label="beszeit <= 3.5\ngini = 0.5\nsamples = 46\nvalue = [22.299, 23.289]\nclass = good Credit", fillcolor="#f7fbfe"] ;
+8 -> 12 ;
+13 [label="gini = 0.413\nsamples = 22\nvalue = [18.868, 7.763]\nclass = bad Credit", fillcolor="#f0b58a"] ;
+12 -> 13 ;
+14 [label="gini = 0.296\nsamples = 24\nvalue = [3.431, 15.526]\nclass = good Credit", fillcolor="#65b3eb"] ;
+12 -> 14 ;
+}

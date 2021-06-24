@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="laufkont <= 3.5\ngini = 0.5\nsamples = 494\nvalue = [247.0, 247.0]\nclass = good Credit", fillcolor="#ffffff"] ;
+1 [label="laufzeit <= 22.5\ngini = 0.455\nsamples = 285\nvalue = [213.237, 114.803]\nclass = bad Credit", fillcolor="#f3c5a4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="moral <= 1.5\ngini = 0.5\nsamples = 157\nvalue = [76.41, 79.318]\nclass = good Credit", fillcolor="#f8fbfe"] ;
+1 -> 2 ;
+3 [label="gini = 0.218\nsamples = 15\nvalue = [19.547, 2.783]\nclass = bad Credit", fillcolor="#e99355"] ;
+2 -> 3 ;
+4 [label="gini = 0.489\nsamples = 142\nvalue = [56.863, 76.535]\nclass = good Credit", fillcolor="#cce6f8"] ;
+2 -> 4 ;
+5 [label="sparkont <= 3.5\ngini = 0.327\nsamples = 128\nvalue = [136.827, 35.485]\nclass = bad Credit", fillcolor="#eca26c"] ;
+1 -> 5 ;
+6 [label="gini = 0.279\nsamples = 106\nvalue = [124.388, 25.048]\nclass = bad Credit", fillcolor="#ea9a61"] ;
+5 -> 6 ;
+7 [label="gini = 0.496\nsamples = 22\nvalue = [12.439, 10.437]\nclass = bad Credit", fillcolor="#fbebdf"] ;
+5 -> 7 ;
+8 [label="moral <= 0.5\ngini = 0.324\nsamples = 209\nvalue = [33.763, 132.197]\nclass = good Credit", fillcolor="#6cb6ec"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="laufzeit <= 28.5\ngini = 0.404\nsamples = 4\nvalue = [3.554, 1.392]\nclass = bad Credit", fillcolor="#efb287"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 2\nvalue = [3.554, 0.0]\nclass = bad Credit", fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 2\nvalue = [0.0, 1.392]\nclass = good Credit", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="telef <= 1.5\ngini = 0.305\nsamples = 205\nvalue = [30.209, 130.806]\nclass = good Credit", fillcolor="#67b4eb"] ;
+8 -> 12 ;
+13 [label="gini = 0.374\nsamples = 113\nvalue = [23.101, 69.577]\nclass = good Credit", fillcolor="#7bbeee"] ;
+12 -> 13 ;
+14 [label="gini = 0.186\nsamples = 92\nvalue = [7.108, 61.228]\nclass = good Credit", fillcolor="#50a8e8"] ;
+12 -> 14 ;
+}
